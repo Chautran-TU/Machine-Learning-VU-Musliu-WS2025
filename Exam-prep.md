@@ -22,36 +22,33 @@ It decides **yes (1)** or **no (0)** based on inputs.
 # 🧠 Perceptron Example 
 
 ## Scenario
-Deciding whether a student **passes** or **fails** based on two inputs:
-- Exam score (x₁)  
-- Homework completion (x₂)
-
----
+Decide if a student passes based on:
+- Exam score (x1)
+- Homework completion (x2)
 
 ## Step-by-Step
-1. **Inputs**:  
-   - Exam score = 80 (x₁)  
-   - Homework completion = 1 (x₂, where 1 = done, 0 = not done)
+1. Inputs:
+   - Exam score = 80 (x1)
+   - Homework done = 1 (x2)
 
-2. **Weights**:  
-   - Exam score weight = 0.5  
-   - Homework weight = 1.0  
+2. Weights:
+   - Exam score weight = 0.5
+   - Homework weight = 1.0
 
-3. **Bias (b)**: -40 (baseline requirement)
+3. Bias:
+   - b = -40
 
-4. **Calculation**:  
-   
+4. Calculation:
+   score = (0.5 * 80) + (1.0 * 1) + (-40)
+   score = 40 + 1 - 40
+   score = 1
 
-\[
-   \text{score} = (0.5 \cdot 80) + (1.0 \cdot 1) - 40
-   \]
+5. Rule:
+   - If score > 0 → Output = 1 (Pass)
+   - If score ≤ 0 → Output = 0 (Fail)
 
-  
-   
-
-\[
-   \text{score} = 40 + 1 - 40 = 1
-   \]
+## Result
+Output = 1 → Student passes
 
 
 
